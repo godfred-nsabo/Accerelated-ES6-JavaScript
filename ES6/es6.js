@@ -32,3 +32,32 @@ age: 27
 console.log(OBJ);
 OBJ.age = 30;
 console.log(OBJ);
+
+
+//Hoisting
+
+//let age; // correct-declare berfore initialisation
+
+//age = 27;
+//console.log(age);
+//var age; 
+
+//age = 27;
+//console.log(age);
+//let age; // generates error
+
+function doSmth(){
+    age = 29;
+  }
+  let age;
+  doSmth();
+  console.log(age);
+  
+  //Alternative using arrow function
+  
+  const doSomth = () => {
+    AGES = 30
+  }
+  let AGES;
+  doSomth();
+  console.log(AGES);
