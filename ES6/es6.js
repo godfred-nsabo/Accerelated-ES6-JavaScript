@@ -1,315 +1,339 @@
-//Let & BLock Scope
-//console.log('something');
+// //Let & BLock Scope
+// //console.log('something');
 
-//var name = "Goddey";
-//let name = "Goddey";
-//console.log(name);
+// //var name = "Goddey";
+// //let name = "Goddey";
+// //console.log(name);
 
-let age = 39;
-if (true) {
-  let name = "Goddey";
-  let age = 83;
-console.log(age);
-}
-//console.log(name);
+// let age = 39;
+// if (true) {
+//   let name = "Goddey";
+//   let age = 83;
+// console.log(age);
+// }
+// //console.log(name);
 
-console.log(age);
+// console.log(age);
 
 
-//Constants with 'Const'
+// //Constants with 'Const'
 
-//const Age = 27;
-//Age  = 29
+// //const Age = 27;
+// //Age  = 29
 
-const AGES = [27,29,31];
-console.log(AGES);
-AGES.push(25);
-console.log(AGES);
+// const AGES = [27,29,31];
+// console.log(AGES);
+// AGES.push(25);
+// console.log(AGES);
 
-const OBJ = {
-age: 27
-};
-console.log(OBJ);
-OBJ.age = 30;
-console.log(OBJ);
+// const OBJ = {
+// age: 27
+// };
+// console.log(OBJ);
+// OBJ.age = 30;
+// console.log(OBJ);
 
 
-//Hoisting
+// //Hoisting
 
-//let age; // correct-declare berfore initialisation
+// //let age; // correct-declare berfore initialisation
 
-//age = 27;
-//console.log(age);
-//var age;
+// //age = 27;
+// //console.log(age);
+// //var age;
 
-//age = 27;
-//console.log(age);
-//let age; // generates error
+// //age = 27;
+// //console.log(age);
+// //let age; // generates error
 
-function doSmth(){
-    age = 29;
-  }
-  //let age;
-  doSmth();
-  console.log(age);
+// function doSmth(){
+//     age = 29;
+//   }
+//   //let age;
+//   doSmth();
+//   console.log(age);
 
-  //Alternative using arrow function
+//   //Alternative using arrow function
 
-  const doSomth = () => {
-    AGED = 30
-  }
-  let AGED;
-  doSomth();
-  console.log(AGED);
+//   const doSomth = () => {
+//     AGED = 30
+//   }
+//   let AGED;
+//   doSomth();
+//   console.log(AGED);
 
-  //ARROW FUNCTIONS (FAT)
+//   //ARROW FUNCTIONS (FAT)
 
-function fn(){
-    console.log('Hello \n World');
-  }
-  fn();
+// function fn(){
+//     console.log('Hello \n World');
+//   }
+//   fn();
 
-  // in arrow wAY
+//   // in arrow wAY
 
-  var func = () => {
-  console.log('Hello \n Goddey')
-  }
-  func();
+//   var func = () => {
+//   console.log('Hello \n Goddey')
+//   }
+//   func();
 
-  // Alternative 1
+//   // Alternative 1
 
-  var funct = () => console.log('Hello \n World!');
-  funct();
+//   var funct = () => console.log('Hello \n World!');
+//   funct();
 
-  // Alternative 2: if one line of code
+//   // Alternative 2: if one line of code
 
-  var functn = () => 'Hello \n Prez JJ'; console.log(functn());
+//   var functn = () => 'Hello \n Prez JJ'; console.log(functn());
 
-  //Example
+//   //Example
 
-  var example = () => {
-     let a = 2;
-     let b = 3;
-     return a + b;
-  };
+//   var example = () => {
+//      let a = 2;
+//      let b = 3;
+//      return a + b;
+//   };
 
-  console.log(example());
+//   console.log(example());
 
-  // Alternative Method 1;
+//   // Alternative Method 1;
 
-  var exampleAlt1 = (a, b) => {
-    return a + b;
-  };
+//   var exampleAlt1 = (a, b) => {
+//     return a + b;
+//   };
 
-  //console.dir(exampleAlt1(4,5));
-  console.log(exampleAlt1(4,5));
+//   //console.dir(exampleAlt1(4,5));
+//   console.log(exampleAlt1(4,5));
 
 
-  // Alternative Method 2;
+//   // Alternative Method 2;
 
-  var exampleAlt2 = (a, b) => a + b;
+//   var exampleAlt2 = (a, b) => a + b;
 
-  //console.dir(exampleAlt1(4,5));
-  console.log(exampleAlt2(4,6));
+//   //console.dir(exampleAlt1(4,5));
+//   console.log(exampleAlt2(4,6));
 
 
-  // Alternative Method 3;
+//   // Alternative Method 3;
 
-  var exampleAlt3 = (a, b) => a + b;
+//   var exampleAlt3 = (a, b) => a + b;
 
-  //console.dir(exampleAlt1(4,5));
-  console.log(exampleAlt3(4,10));
+//   //console.dir(exampleAlt1(4,5));
+//   console.log(exampleAlt3(4,10));
 
 
-  // Alternative Method 4;
+//   // Alternative Method 4;
 
-  //var exampleAlt4 = (a) => a + 7;
+//   //var exampleAlt4 = (a) => a + 7;
 
-  var exampleAlt4 = a => a + 7; // Alt
-  console.log(exampleAlt4(4));
+//   var exampleAlt4 = a => a + 7; // Alt
+//   console.log(exampleAlt4(4));
 
 
-  // Using arrow as call back
+//   // Using arrow as call back
 
-  setTimeout(() => console.log('Hello World!!!'), 1000);
+//   setTimeout(() => console.log('Hello World!!!'), 1000);
 
-  // Arrow Functions and 'this' key word
+//   // Arrow Functions and 'this' key word
 
-//setTimeout(() => console.log('Hello World!!!'), 1000);
+// //setTimeout(() => console.log('Hello World!!!'), 1000);
 
-//using arrow function
+// //using arrow function
 
-var button = document.querySelector('button');
+// /*var button = document.querySelector('button');
 
-var getThis = () => console.log(this);
-//getThis();// we get the window object
+// var getThis = () => console.log(this);
+// //getThis();// we get the window object
 
-function get() {
-  console.log(this);
-}
-// we get the window object
-//get();
+// function get() {
+//   console.log(this);
+// }
+// // we get the window object
+// //get();
 
-button.addEventListener('click', get);
+// button.addEventListener('click', get);*/
 
 
-// Functions and Default Parameters
+// // Functions and Default Parameters
 
-//var isEqualTo = (num, compare) => num === compare;
+// //var isEqualTo = (num, compare) => num === compare;
 
-//console.log(isEqualTo(10,10));
+// //console.log(isEqualTo(10,10));
 
-/*var isEqualTo = (num, compare=0) => num === compare;
+// /*var isEqualTo = (num, compare=0) => num === compare;
 
-console.log(isEqualTo(10));*/
+// console.log(isEqualTo(10));*/
 
 
-/*function isEqualTo(num =19, compare = 10) {
- return num == compare;
-}
-console.log(isEqualTo());*/
+// /*function isEqualTo(num =19, compare = 10) {
+//  return num == compare;
+// }
+// console.log(isEqualTo());*/
 
-let x = 10
+// //let x = 10
 
-/*function isEqualTo (num, compare = x) {
-console.log(num);
-console.log(compare);
-return num == compare;
-}
-console.log(isEqualTo(20));*/
+// /*function isEqualTo (num, compare = x) {
+// console.log(num);
+// console.log(compare);
+// return num == compare;
+// }
+// console.log(isEqualTo(20));*/
 
 
-function isEqualTo (num = compare, compare = x) {
-console.log(num);
-console.log(compare);
-return num == compare;
-}
-console.log(isEqualTo());
+// /*function isEqualTo (num = compare, compare = x) {
+// console.log(num);
+// console.log(compare);
+// return num == compare;
+// }
+// console.log(isEqualTo());*/
 
 
 
-// Object Literals
+// // Object Literals
 
-let obj = {
-name: 'iamGoddey',
-age: 30
-};
-console.log(obj);
+// let obj = {
+// name: 'iamGoddey',
+// age: 30
+// };
+// console.log(obj);
 
-/*
-let name = 'iamdokkie'
-let Age = 29;
+// /*
+// let name = 'iamdokkie'
+// let Age = 29;
 
-let OBJ = {
-name:'Fred00',
-//name,
-Age,
-greet(){
-console.log(this.name + ' is ' + this.Age);
-}
-//var greet = () => console.log(this.name + ' is ' + this.Age)
-};
-OBJ.greet();
-console.log(OBJ);
+// let OBJ = {
+// name:'Fred00',
+// //name,
+// Age,
+// greet(){
+// console.log(this.name + ' is ' + this.Age);
+// }
+// //var greet = () => console.log(this.name + ' is ' + this.Age)
+// };
+// OBJ.greet();
+// console.log(OBJ);
 
-// Creating a string Function
+// // Creating a string Function
 
 
 
-let Name = 'iamdokkie'
-let Aged = 29;
+// let Name = 'iamdokkie'
+// let Aged = 29;
 
-let OBJ1 = {
-Name:'Fred00',
-//name,
-Aged,
-"greet me"(){
-console.log(this.Name + ' is ' + this.Aged);
-}
-//var greet = () => console.log(this.name + ' is ' + this.Age)
-};
-OBJ1["greet me"]();
-//console.log(OBJ1);*/
+// let OBJ1 = {
+// Name:'Fred00',
+// //name,
+// Aged,
+// "greet me"(){
+// console.log(this.Name + ' is ' + this.Aged);
+// }
+// //var greet = () => console.log(this.name + ' is ' + this.Age)
+// };
+// OBJ1["greet me"]();
+// //console.log(OBJ1);*/
 
 
 
-// Dynamic Fields
+// // Dynamic Fields
 
 
-let names = 'iamdokkie'
-let Ages = 29;
-let ageField = 'Ages';
+// let names = 'iamdokkie'
+// let Ages = 29;
+// let ageField = 'Ages';
 
-let OBJ3 = {
-"names":'Fredooo',
-//name,
-[ageField] : 30,
-greet(){
-console.log(this.names + ' is ' + this.Ages);
-}
-//var greet = () => console.log(this.name + ' is ' + this.Age)
-};
-OBJ1["greet me"]();
-console.log(OBJ3);
+// let OBJ3 = {
+// "names":'Fredooo',
+// //name,
+// [ageField] : 30,
+// greet(){
+// console.log(this.names + ' is ' + this.Ages);
+// }
+// //var greet = () => console.log(this.name + ' is ' + this.Age)
+// };
+// OBJ1["greet me"]();
+// console.log(OBJ3);
 
-let num = [1, 2 ,3, 43];
+// let num = [1, 2 ,3, 43];
 
-var sumAdd = (toSum) => {
-let res = 0;
-for (let eachSum = 0; eachSum < toSum.length; eachSum++) {
-  res += toSum[eachSum];
-}
-  return res;
-};
+// var sumAdd = (toSum) => {
+// let res = 0;
+// for (let eachSum = 0; eachSum < toSum.length; eachSum++) {
+//   res += toSum[eachSum];
+// }
+//   return res;
+// };
 
-console.log(sumAdd(num));
+// console.log(sumAdd(num));
 
-// The Rest Operator
+// // The Rest Operator
 
-var sum = (...toSum) => {
-console.log(toSum);
-let result = 0;
-for (let each = 0; each < toSum.length; each++) {
-  result += toSum[each];
-}
-  return result;
-};
+// var sum = (...toSum) => {
+// console.log(toSum);
+// let result = 0;
+// for (let each = 0; each < toSum.length; each++) {
+//   result += toSum[each];
+// }
+//   return result;
+// };
 
-console.log(sum(10, 20, 30, 43, 30, 20, 2));
+// console.log(sum(10, 20, 30, 43, 30, 20, 2));
 
-console.log(sum(10, 20, 30, 43, 30, 20,"2"));
+// console.log(sum(10, 20, 30, 43, 30, 20,"2"));
 
 
-let sum1 = [1,2,3,5,32,4,5,3,4,23,5,2];
+// let sum1 = [1,2,3,5,32,4,5,3,4,23,5,2];
 
-console.log(Math.max(sum1));
+// console.log(Math.max(sum1));
 
-// The SPread Operator
+// // The SPread Operator
 
-console.log(...sum1);
+// console.log(...sum1);
 
-console.log(Math.max(...sum1));
+// console.log(Math.max(...sum1));
 
 
 
-// For-of-loop
+// // For-of-loop
 
-let projectResults = [23, 30, 4, 8, 30, 21, 20, 15];
+// let projectResults = [23, 30, 4, 8, 30, 21, 20, 15];
 
-for (let projectResult of projectResults) {
-  console.log(projectResult);
-};
+// for (let projectResult of projectResults) {
+//   console.log(projectResult);
+// };
 
-// Template Literals
+// // Template Literals
 
-let Sales = 'SalesForce Trainee';
-let comp = 'Amalitech';
+// let Sales = 'SalesForce Trainee';
+// let comp = 'Amalitech';
 
-let descriptn = `
-   Hello, I'am a ${Sales} in ${comp + ' at SSNIT Office, Takoradi.'} \n
-Hello, I'am a \${Sales} in \${comp + ' at SSNIT Office, Takoradi.'}
-`;
-console.log(descriptn);
+// let descriptn = `
+//    Hello, I'am a ${Sales} in ${comp + ' at SSNIT Office, Takoradi.'} \n
+// Hello, I'am a \${Sales} in \${comp + ' at SSNIT Office, Takoradi.'}
+// `;
+// console.log(descriptn);
 
 
+// // Destructuring Arrays
 
+ let list = [1, 3, 4, 5, 'Dekay', 'SAM', 'DOCKY'];
+ let [x, y] = list;
+
+ // Applying Rest Operator
+ let [a, ...b] = list;
+
+ //let [u, v, w, t, s, z, i, j, c] = list;
+ let [u = 'Default', v, w, t, s, z, i, j, c = 'Default'] = list;
+
+ console.log(x);
+ console.log(y);
+ console.log(a);
+ console.log(b);
+ console.log(c);
+
+ console.log(list);
+
+// // Destructuring for swapping
+
+let p = 2;
+ let h = 5;
+ [p, h] = [h, p];
+ console.log(h);
