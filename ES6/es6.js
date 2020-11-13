@@ -337,3 +337,8 @@ let p = 2;
  let h = 5;
  [p, h] = [h, p];
  console.log(h);
+
+ // Printing out a particular element;
+
+let [l,  , o] = [1, 4, 5, 'Fred', 'T'];
+console.log(l, o);
