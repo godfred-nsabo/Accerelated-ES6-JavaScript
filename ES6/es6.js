@@ -314,110 +314,110 @@
 
 // // Destructuring Arrays
 
- let list = [1, 3, 4, 5, 'Dekay', 'SAM', 'DOCKY'];
- let [x, y] = list;
+//  let list = [1, 3, 4, 5, 'Dekay', 'SAM', 'DOCKY'];
+//  let [x, y] = list;
 
- // Applying Rest Operator
- let [a, ...b] = list;
+//  // Applying Rest Operator
+//  let [a, ...b] = list;
 
- //let [u, v, w, t, s, z, i, j, c] = list;
- let [u = 'Default', v, w, t, s, z, i, j, c = 'Default'] = list;
+//  //let [u, v, w, t, s, z, i, j, c] = list;
+//  let [u = 'Default', v, w, t, s, z, i, j, c = 'Default'] = list;
 
- console.log(x);
- console.log(y);
- console.log(a);
- console.log(b);
- console.log(c);
+//  console.log(x);
+//  console.log(y);
+//  console.log(a);
+//  console.log(b);
+//  console.log(c);
 
- console.log(list);
+//  console.log(list);
 
-// // Destructuring for swapping
+// // // Destructuring for swapping
 
-let p = 2;
- let h = 5;
- [p, h] = [h, p];
- console.log(h);
+// let p = 2;
+//  let h = 5;
+//  [p, h] = [h, p];
+//  console.log(h);
 
- // Printing out a particular element;
+//  // Printing out a particular element;
 
-let [l,  , o] = [1, 4, 5, 'Fred', 'T'];
-console.log(l, o);
+// let [l,  , o] = [1, 4, 5, 'Fred', 'T'];
+// console.log(l, o);
 
 
 
-// Destructuring Objects
+// // Destructuring Objects
 
-let amaTech = {
-    Trainees: 'Sedem, Isaac, Goddey',
-    Trainers: 'Sharaf, Fifii, Emma',
-    Greetings: function () {
-    console.log('Hello People!!!!');
-  }
-  }
-  let {Trainees, Trainers} = amaTech;
-//let {Trainers, Greetings: Hello} = amaTech
-  //Greetings();
-  //Hello();
-  console.log(Trainees, Trainers);
+// let amaTech = {
+//     Trainees: 'Sedem, Isaac, Goddey',
+//     Trainers: 'Sharaf, Fifii, Emma',
+//     Greetings: function () {
+//     console.log('Hello People!!!!');
+//   }
+//   }
+//   let {Trainees, Trainers} = amaTech;
+// //let {Trainers, Greetings: Hello} = amaTech
+//   //Greetings();
+//   //Hello();
+//   console.log(Trainees, Trainers);
 
-  // Symbols Basic
+//   // Symbols Basic
 
-let symbol = Symbol('debug');
+// let symbol = Symbol('debug');
 
-let anotherSymbol = Symbol('debug');
+// let anotherSymbol = Symbol('debug');
 
-let Objt = {
-  shien: 'Nsabo',
-[symbol]:'Who the Hell are you to view my code'
-}
+// let Objt = {
+//   shien: 'Nsabo',
+// [symbol]:'Who the Hell are you to view my code'
+// }
 
-console.log(Objt);
-console.log(Objt[symbol]);
-console.log(symbol == anotherSymbol);
-console.log(symbol.toString());
-console.log(symbol);
-console.log(typeof symbol);
+// console.log(Objt);
+// console.log(Objt[symbol]);
+// console.log(symbol == anotherSymbol);
+// console.log(symbol.toString());
+// console.log(symbol);
+// console.log(typeof symbol);
 
-// Share Symbols
+// // Share Symbols
 
-let symbol1 = Symbol.for('rank');
+// let symbol1 = Symbol.for('rank');
 
-let anotherSymbol1 = Symbol.for('rank');
+// let anotherSymbol1 = Symbol.for('rank');
 
-let person = {
-  seku: 'Nsabo',
-}
+// let person = {
+//   seku: 'Nsabo',
+// }
 
-var makeAge = (person) => {
-let anotherSymbol2 = Symbol.for('rank');
-person[anotherSymbol2] = 'Okyere';
-}
+// var makeAge = (person) => {
+// let anotherSymbol2 = Symbol.for('rank');
+// person[anotherSymbol2] = 'Okyere';
+// }
 
-makeAge(person);
+// makeAge(person);
 
-console.log(person[symbol1]);
-console.log(symbol1 == anotherSymbol1);
+// console.log(person[symbol1]);
+// console.log(symbol1 == anotherSymbol1);
 
-// Share Symbols
+// // Share Symbols
 
-let symbol2 = Symbol.for('rank');
+// let symbol2 = Symbol.for('rank');
 
-let anotherSymbol3 = Symbol.for('rank');
+// let anotherSymbol3 = Symbol.for('rank');
 
-let person1 = {
-  seku: 'Nsabo',
-rank: '2IC'
-}
+// let person1 = {
+//   seku: 'Nsabo',
+// rank: '2IC'
+// }
 
-var makeAge = (person) => {
-let anotherSymbol3 = Symbol.for('rank');
-person[anotherSymbol3] = 'Okyere';
-}
+// var makeAge = (person) => {
+// let anotherSymbol3 = Symbol.for('rank');
+// person[anotherSymbol3] = 'Okyere';
+// }
 
-makeAge(person1);
+// makeAge(person1);
 
-console.log(person1[symbol2]);
-console.log(person1['rank']);
+// console.log(person1[symbol2]);
+// console.log(person1['rank']);
 
 
 // Syntax WOn't WOrk 
@@ -493,6 +493,37 @@ console.log(iterat.next());
 console.log(iterat.next());
 console.log(iterat.next()); // done when it exhausted all values
 
+// ITERATORS AND GENERATORS
 
+let array1 = [21, 23, 34/5, 0.5*15];
+
+
+//var array1[Symbol.iterator] = () => {
+array1[Symbol.iterator] = function () { 
+let nextValue = 5;
+  return {
+    next: function () {
+      nextValue++;
+      return {
+        done: nextValue > 20 ? true : false,
+        value: nextValue
+      };
+    }
+  };
+}
+
+for (let element of array1) {
+  console.log(element);
+}
+
+/*let iterat = array1[Symbol.iterator]();
+console.log(typeof array1);
+console.log(typeof array1[Symbol.iterator]);
+console.log(iterat);
+console.log(iterat.next());
+console.log(iterat.next());
+console.log(iterat.next());
+console.log(iterat.next());
+console.log(iterat.next()); // done when it exhausted all values */
 
 
