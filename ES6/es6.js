@@ -398,3 +398,43 @@ makeAge(person);
 console.log(person[symbol1]);
 console.log(symbol1 == anotherSymbol1);
 
+// Share Symbols
+
+let symbol2 = Symbol.for('rank');
+
+let anotherSymbol3 = Symbol.for('rank');
+
+let person1 = {
+  seku: 'Nsabo',
+rank: '2IC'
+}
+
+var makeAge = (person) => {
+let anotherSymbol3 = Symbol.for('rank');
+person[anotherSymbol3] = 'Okyere';
+}
+
+makeAge(person1);
+
+console.log(person1[symbol2]);
+console.log(person1['rank']);
+
+
+// Syntax WOn't WOrk 
+/*let symbol = Symbol'rank');
+
+//let anotherSymbol1 = Symbol.for('rank');
+
+let person = {
+  seku: 'Nsabo',
+}
+
+var makeAge = (person) => {
+let anotherSymbol2 = Symbol('rank');
+person[anotherSymbol2] = 'Okyere';
+}
+
+makeAge(person);
+
+console.log(person[symbol]);
+*/
