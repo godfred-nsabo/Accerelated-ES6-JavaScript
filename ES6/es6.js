@@ -279,3 +279,15 @@ console.log(sum(10, 20, 30, 43, 30, 20, 2));
 
 console.log(sum(10, 20, 30, 43, 30, 20,"2"));
 
+
+let sum1 = [1,2,3,5,32,4,5,3,4,23,5,2];
+
+console.log(Math.max(sum1));
+
+// The SPread Operator
+
+console.log(...sum1);
+
+console.log(Math.max(...sum1));
+
+
