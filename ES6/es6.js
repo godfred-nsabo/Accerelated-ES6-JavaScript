@@ -300,6 +300,16 @@ for (let projectResult of projectResults) {
   console.log(projectResult);
 };
 
+// Template Literals
+
+let Sales = 'SalesForce Trainee';
+let comp = 'Amalitech';
+
+let descriptn = `
+   Hello, I'am a ${Sales} in ${comp + ' at SSNIT Office, Takoradi.'} \n
+Hello, I'am a \${Sales} in \${comp + ' at SSNIT Office, Takoradi.'}
+`;
+console.log(descriptn);
 
 
 
