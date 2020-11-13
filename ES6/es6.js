@@ -359,3 +359,21 @@ let amaTech = {
   //Greetings();
   //Hello();
   console.log(Trainees, Trainers);
+
+  // Symbols Basic
+
+let symbol = Symbol('debug');
+
+let anotherSymbol = Symbol('debug');
+
+let Objt = {
+  shien: 'Nsabo',
+[symbol]:'Who the Hell are you to view my code'
+}
+
+console.log(Objt);
+console.log(Objt[symbol]);
+console.log(symbol == anotherSymbol);
+console.log(symbol.toString());
+console.log(symbol);
+console.log(typeof symbol);
