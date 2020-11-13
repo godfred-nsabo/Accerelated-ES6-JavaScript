@@ -377,3 +377,24 @@ console.log(symbol == anotherSymbol);
 console.log(symbol.toString());
 console.log(symbol);
 console.log(typeof symbol);
+
+// Share Symbols
+
+let symbol1 = Symbol.for('rank');
+
+let anotherSymbol1 = Symbol.for('rank');
+
+let person = {
+  seku: 'Nsabo',
+}
+
+var makeAge = (person) => {
+let anotherSymbol2 = Symbol.for('rank');
+person[anotherSymbol2] = 'Okyere';
+}
+
+makeAge(person);
+
+console.log(person[symbol1]);
+console.log(symbol1 == anotherSymbol1);
+
