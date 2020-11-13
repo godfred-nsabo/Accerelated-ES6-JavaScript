@@ -477,3 +477,22 @@ num1s[Symbol.toPrimitive] = function () {
 }
 console.log(num1s + 1);
 
+// ITERATORS AND GENERATORS
+
+let arrays = [21, 23, 34/5, 0.5];
+
+let iterat = arrays[Symbol.iterator] ();
+
+
+console.log(typeof arrays);
+console.log(typeof arrays[Symbol.iterator]);
+console.log(iterat);
+console.log(iterat.next());
+console.log(iterat.next());
+console.log(iterat.next());
+console.log(iterat.next());
+console.log(iterat.next()); // done when it exhausted all values
+
+
+
+
