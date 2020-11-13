@@ -251,3 +251,31 @@ console.log(this.names + ' is ' + this.Ages);
 };
 OBJ1["greet me"]();
 console.log(OBJ3);
+
+let num = [1, 2 ,3, 43];
+
+var sumAdd = (toSum) => {
+let res = 0;
+for (let eachSum = 0; eachSum < toSum.length; eachSum++) {
+  res += toSum[eachSum];
+}
+  return res;
+};
+
+console.log(sumAdd(num));
+
+// The Rest Operator
+
+var sum = (...toSum) => {
+console.log(toSum);
+let result = 0;
+for (let each = 0; each < toSum.length; each++) {
+  result += toSum[each];
+}
+  return result;
+};
+
+console.log(sum(10, 20, 30, 43, 30, 20, 2));
+
+console.log(sum(10, 20, 30, 43, 30, 20,"2"));
+
