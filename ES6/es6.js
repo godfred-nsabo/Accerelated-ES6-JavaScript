@@ -438,3 +438,42 @@ makeAge(person);
 
 console.log(person[symbol]);
 */
+
+// Well Known Symbols;
+
+class PERSON {
+  
+}
+
+let PSN = new PERSON();
+
+console.log(PSN) ;
+
+// To String Tag
+
+class PERSON1 {
+  
+}
+PERSON1.prototype[Symbol.toStringTag] = 'PERSON1';
+let PSN1 = new PERSON1();
+
+console.log(PSN1) ;
+// Well Known Symbols;
+
+class PERSON {
+  
+}
+
+let PSN = new PERSON();
+
+console.log(PSN) ;
+
+// To String Tag
+
+class PERSON1 {
+  
+}
+PERSON1.prototype[Symbol.toStringTag] = 'PERSON1';
+let PSN1 = new PERSON1();
+
+console.log(PSN1) ;
