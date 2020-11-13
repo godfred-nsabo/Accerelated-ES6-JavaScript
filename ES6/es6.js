@@ -49,18 +49,18 @@ console.log(OBJ);
 function doSmth(){
     age = 29;
   }
-  let age;
+  //let age;
   doSmth();
   console.log(age);
   
   //Alternative using arrow function
   
   const doSomth = () => {
-    AGES = 30
+    AGED = 30
   }
-  let AGES;
+  let AGED;
   doSomth();
-  console.log(AGES);
+  console.log(AGED);
 
   //ARROW FUNCTIONS (FAT)
 
@@ -132,3 +132,22 @@ function fn(){
   // Using arrow as call back
   
   setTimeout(() => console.log('Hello World!!!'), 1000);
+
+  // Arrow Functions and 'this' key word
+
+//setTimeout(() => console.log('Hello World!!!'), 1000);
+
+//using arrow function
+
+var button = document.querySelector('button');
+
+var getThis = () => console.log(this);
+//getThis();// we get the window object
+
+function get() {
+  console.log(this);
+}
+// we get the window object
+//get();
+
+button.addEventListener('click', get);
