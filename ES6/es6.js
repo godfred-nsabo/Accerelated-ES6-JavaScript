@@ -16,7 +16,7 @@ console.log(age);
 console.log(age);
 
 
-//Constants with 'Const' 
+//Constants with 'Const'
 
 //const Age = 27;
 //Age  = 29
@@ -40,7 +40,7 @@ console.log(OBJ);
 
 //age = 27;
 //console.log(age);
-//var age; 
+//var age;
 
 //age = 27;
 //console.log(age);
@@ -52,9 +52,9 @@ function doSmth(){
   //let age;
   doSmth();
   console.log(age);
-  
+
   //Alternative using arrow function
-  
+
   const doSomth = () => {
     AGED = 30
   }
@@ -68,69 +68,69 @@ function fn(){
     console.log('Hello \n World');
   }
   fn();
-  
+
   // in arrow wAY
-  
+
   var func = () => {
   console.log('Hello \n Goddey')
   }
   func();
-  
+
   // Alternative 1
-  
+
   var funct = () => console.log('Hello \n World!');
   funct();
-  
+
   // Alternative 2: if one line of code
-  
+
   var functn = () => 'Hello \n Prez JJ'; console.log(functn());
-  
+
   //Example
-  
+
   var example = () => {
      let a = 2;
      let b = 3;
      return a + b;
   };
-  
+
   console.log(example());
-  
+
   // Alternative Method 1;
-  
+
   var exampleAlt1 = (a, b) => {
     return a + b;
   };
-  
+
   //console.dir(exampleAlt1(4,5));
   console.log(exampleAlt1(4,5));
-  
-  
+
+
   // Alternative Method 2;
-  
+
   var exampleAlt2 = (a, b) => a + b;
-  
+
   //console.dir(exampleAlt1(4,5));
   console.log(exampleAlt2(4,6));
-  
-  
+
+
   // Alternative Method 3;
-  
+
   var exampleAlt3 = (a, b) => a + b;
-  
+
   //console.dir(exampleAlt1(4,5));
   console.log(exampleAlt3(4,10));
-  
-  
+
+
   // Alternative Method 4;
-  
+
   //var exampleAlt4 = (a) => a + 7;
-  
+
   var exampleAlt4 = a => a + 7; // Alt
   console.log(exampleAlt4(4));
-  
-  
+
+
   // Using arrow as call back
-  
+
   setTimeout(() => console.log('Hello World!!!'), 1000);
 
   // Arrow Functions and 'this' key word
@@ -173,7 +173,7 @@ let x = 10
 
 /*function isEqualTo (num, compare = x) {
 console.log(num);
-console.log(compare);  
+console.log(compare);
 return num == compare;
 }
 console.log(isEqualTo(20));*/
@@ -181,7 +181,73 @@ console.log(isEqualTo(20));*/
 
 function isEqualTo (num = compare, compare = x) {
 console.log(num);
-console.log(compare);  
+console.log(compare);
 return num == compare;
 }
 console.log(isEqualTo());
+
+
+
+// Object Literals
+
+let obj = {
+name: 'iamGoddey',
+age: 30
+};
+console.log(obj);
+
+/*
+let name = 'iamdokkie'
+let Age = 29;
+
+let OBJ = {
+name:'Fred00',
+//name,
+Age,
+greet(){
+console.log(this.name + ' is ' + this.Age);
+}
+//var greet = () => console.log(this.name + ' is ' + this.Age)
+};
+OBJ.greet();
+console.log(OBJ);
+
+// Creating a string Function
+
+
+
+let Name = 'iamdokkie'
+let Aged = 29;
+
+let OBJ1 = {
+Name:'Fred00',
+//name,
+Aged,
+"greet me"(){
+console.log(this.Name + ' is ' + this.Aged);
+}
+//var greet = () => console.log(this.name + ' is ' + this.Age)
+};
+OBJ1["greet me"]();
+//console.log(OBJ1);*/
+
+
+
+// Dynamic Fields
+
+
+let names = 'iamdokkie'
+let Ages = 29;
+let ageField = 'Ages';
+
+let OBJ3 = {
+"names":'Fredooo',
+//name,
+[ageField] : 30,
+greet(){
+console.log(this.names + ' is ' + this.Ages);
+}
+//var greet = () => console.log(this.name + ' is ' + this.Age)
+};
+OBJ1["greet me"]();
+console.log(OBJ3);
