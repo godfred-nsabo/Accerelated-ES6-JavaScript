@@ -151,3 +151,37 @@ function get() {
 //get();
 
 button.addEventListener('click', get);
+
+
+// Functions and Default Parameters
+
+//var isEqualTo = (num, compare) => num === compare;
+
+//console.log(isEqualTo(10,10));
+
+/*var isEqualTo = (num, compare=0) => num === compare;
+
+console.log(isEqualTo(10));*/
+
+
+/*function isEqualTo(num =19, compare = 10) {
+ return num == compare;
+}
+console.log(isEqualTo());*/
+
+let x = 10
+
+/*function isEqualTo (num, compare = x) {
+console.log(num);
+console.log(compare);  
+return num == compare;
+}
+console.log(isEqualTo(20));*/
+
+
+function isEqualTo (num = compare, compare = x) {
+console.log(num);
+console.log(compare);  
+return num == compare;
+}
+console.log(isEqualTo());
