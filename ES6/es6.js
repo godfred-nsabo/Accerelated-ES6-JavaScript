@@ -458,22 +458,22 @@ PERSON1.prototype[Symbol.toStringTag] = 'PERSON1';
 let PSN1 = new PERSON1();
 
 console.log(PSN1) ;
-// Well Known Symbols;
 
-class PERSON {
-  
+//  To Primitive
+
+// Eg
+
+let nums = [3, 4, 8, 5, 10];
+
+console.log(nums + 1);
+
+// Now to Pimitive
+
+
+let num1s = [3, 4, 8, 5];
+
+num1s[Symbol.toPrimitive] = function () {
+  return 576;
 }
+console.log(num1s + 1);
 
-let PSN = new PERSON();
-
-console.log(PSN) ;
-
-// To String Tag
-
-class PERSON1 {
-  
-}
-PERSON1.prototype[Symbol.toStringTag] = 'PERSON1';
-let PSN1 = new PERSON1();
-
-console.log(PSN1) ;
