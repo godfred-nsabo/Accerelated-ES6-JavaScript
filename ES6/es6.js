@@ -291,3 +291,15 @@ console.log(...sum1);
 console.log(Math.max(...sum1));
 
 
+
+// For-of-loop
+
+let projectResults = [23, 30, 4, 8, 30, 21, 20, 15];
+
+for (let projectResult of projectResults) {
+  console.log(projectResult);
+};
+
+
+
+
