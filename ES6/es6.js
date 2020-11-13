@@ -342,3 +342,20 @@ let p = 2;
 
 let [l,  , o] = [1, 4, 5, 'Fred', 'T'];
 console.log(l, o);
+
+
+
+// Destructuring Objects
+
+let amaTech = {
+    Trainees: 'Sedem, Isaac, Goddey',
+    Trainers: 'Sharaf, Fifii, Emma',
+    Greetings: function () {
+    console.log('Hello People!!!!');
+  }
+  }
+  let {Trainees, Trainers} = amaTech;
+//let {Trainers, Greetings: Hello} = amaTech
+  //Greetings();
+  //Hello();
+  console.log(Trainees, Trainers);
