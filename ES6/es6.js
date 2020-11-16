@@ -991,6 +991,26 @@ personaly2.name = 'Iam'; //Rejects
 
 
 
+// Extending Built-in-objects
+
+class convertableArray extends Array {
+	convert(){
+		let returnArray = [];
+		this.forEach(value => returnArray.push('Converted! ' + value));
+		return returnArray;
+	}
+}
+
+let numArray = new convertableArray();
+numArray.push(1);
+numArray.push(2);
+numArray.push(3);
+numArray.push(4);
+
+console.log(numArray.convert());
+
+
+
 
 
 
