@@ -965,7 +965,29 @@ console.log(iam1goddey.__proto__ === Personaly1.prototype);
 console.log(iam1goddey.__proto__ === Object.prototype);
 
 
+// Getters and Setters
 
+class Personaly2 {
+	constructor (name){
+		this.name = name;
+	}
+	get name() {
+		return this._name.toUpperCase();
+	}
+	set name(value) {
+		if (value.length > 5) {
+			this._name = value;
+		} else {
+			console.log('Rejected')
+		}
+	}
+}
+
+let personaly2 = new Personaly2('Iamgoddey');
+
+console.log(personaly2._name);
+console.log(personaly2.name);
+personaly2.name = 'Iam'; //Rejects
 
 
 
