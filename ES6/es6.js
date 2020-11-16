@@ -1012,6 +1012,60 @@ console.log(numArray.convert());
 
 
 
+// Maps - Creating and Adding items; Managing
+
+let cardAce = {
+	name: 'Aces of Spades'
+};
+
+let cardKings = {
+	name: 'Aces of Clubs'
+};
+
+let deck = new Map();
+deck.set('as', cardAce);
+deck.set('ck', cardKings);
+
+console.log(deck);
+console.log(deck.size);
+
+//Managing
+
+//deck.set('as', cardAce);
+
+//console.log(deck.size);
+
+//deck.delete('as');
+//deck.clear();
+
+//console.log(deck.get('as'));
+
+
+// Loopining
+
+console.log(deck.keys());
+
+for (key of deck.keys()){
+	console.log(key);
+}
+	
+for (value of deck.values()) {
+	console.log(value);
+}	
+
+for (entry of deck.entries()) {
+	console.log(entry);
+}	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
 
 
 
