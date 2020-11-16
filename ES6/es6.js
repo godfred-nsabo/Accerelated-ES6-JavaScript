@@ -1058,6 +1058,26 @@ for (entry of deck.entries()) {
 }	
 	
 
+	// Weak Map
+
+let cardAce1 = {
+	name: 'Aces of Spades'
+};
+
+let cardKing1 = {
+	name: 'Aces of Clubs'
+};
+
+let key1 = {a:1};
+let key2 = {b:2};
+let deck1 = new WeakMap();
+deck1.set(key1, cardAce1);
+deck1.set(key2, cardKing1);
+
+console.log(deck1.get(key1));
+console.log(deck1.get(key2));
+	
+	
 	
 	
 	
